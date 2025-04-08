@@ -1,0 +1,33 @@
+{
+  "name": "react-billing",
+  "version": "0.0.1",
+  "description": "Billing components and utilities for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production tsup",
+    "dev": "NODE_ENV=development tsup --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "publish:patch": "npm version patch && npm publish --access public",
+    "publish:minor": "npm version minor && npm publish --access public",
+    "publish:major": "npm version major && npm publish --access public"
+  },
+  "keywords": [
+    "billing",
+    "react",
+    "components",
+    "utilities"
+  ],
+  "author": "shane@teer.ai",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
