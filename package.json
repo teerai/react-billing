@@ -1,6 +1,6 @@
 {
   "name": "react-billing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Billing components and utilities for React",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
